@@ -25,7 +25,7 @@ struct ShareSheet: UIViewControllerRepresentable {
         
         // I don't recall if Swift & ObjC block types are still incompatible by default...
         controller.completionWithItemsHandler = { type, completed, returnedItems, error in
-            self.callback(type, completed, returnedItems, error)
+            self.callback?(type, completed, returnedItems, error)
         }
         
         return controller
