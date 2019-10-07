@@ -9,8 +9,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showShareSheet = false
+    
     var body: some View {
-        Text("Hello World")
+        VStack(spacing: 20) {
+            Text("Hello World")
+            Button(action: {
+                self.showShareSheet = true
+            }) {
+                Text("Share Me").bold()
+            }
+        }
+        .sheet(isPresented: $showShareSheet) {
+            ShareSheet(activityItems: ["Hello World"]) { _, _, _, _ in }
+        }
     }
 }
 

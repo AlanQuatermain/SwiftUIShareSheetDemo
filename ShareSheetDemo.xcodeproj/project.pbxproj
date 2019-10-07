@@ -13,6 +13,7 @@
 		38AA1973234BDF0B00A72AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AA1972234BDF0B00A72AD7 /* Assets.xcassets */; };
 		38AA1976234BDF0B00A72AD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38AA1975234BDF0B00A72AD7 /* Preview Assets.xcassets */; };
 		38AA1979234BDF0B00A72AD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38AA1977234BDF0B00A72AD7 /* LaunchScreen.storyboard */; };
+		38AA1981234BDF2300A72AD7 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AA1980234BDF2300A72AD7 /* ShareSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		38AA1975234BDF0B00A72AD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		38AA1978234BDF0B00A72AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38AA197A234BDF0B00A72AD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38AA1980234BDF2300A72AD7 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				38AA196C234BDF0800A72AD7 /* AppDelegate.swift */,
+				38AA1980234BDF2300A72AD7 /* ShareSheet.swift */,
 				38AA196E234BDF0800A72AD7 /* SceneDelegate.swift */,
 				38AA1970234BDF0800A72AD7 /* ContentView.swift */,
 				38AA1972234BDF0B00A72AD7 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				38AA196D234BDF0800A72AD7 /* AppDelegate.swift in Sources */,
 				38AA196F234BDF0800A72AD7 /* SceneDelegate.swift in Sources */,
 				38AA1971234BDF0800A72AD7 /* ContentView.swift in Sources */,
+				38AA1981234BDF2300A72AD7 /* ShareSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
