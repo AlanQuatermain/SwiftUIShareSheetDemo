@@ -15,7 +15,7 @@ struct ShareSheet: UIViewControllerRepresentable {
     let activityItems: [Any]
     let applicationActivities: [UIActivity]? = nil
     let excludedActivityTypes: [UIActivity.ActivityType]? = nil
-    let callback: Callback
+    let callback: Callback? = nil
     
     func makeUIViewController(context: Context) -> UIActivityViewController {
         let controller = UIActivityViewController(
@@ -38,6 +38,6 @@ struct ShareSheet: UIViewControllerRepresentable {
 
 struct ShareSheet_Previews: PreviewProvider {
     static var previews: some View {
-        ShareSheet(activityItems: ["A string" as NSString]) { _, _, _, _ in }
+        ShareSheet(activityItems: ["A string" as NSString])
     }
 }

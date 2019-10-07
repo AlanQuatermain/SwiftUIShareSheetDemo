@@ -21,7 +21,7 @@ struct ContentView: View {
             }
         }
         .sheet(isPresented: $showShareSheet) {
-            ShareSheet(activityItems: ["Hello World"]) { _, _, _, _ in }
+            ShareSheet(activityItems: ["Hello World"])
         }
     }
 }
