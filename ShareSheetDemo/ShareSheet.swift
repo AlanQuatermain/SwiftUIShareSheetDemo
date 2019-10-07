@@ -22,12 +22,7 @@ struct ShareSheet: UIViewControllerRepresentable {
             activityItems: activityItems,
             applicationActivities: applicationActivities)
         controller.excludedActivityTypes = excludedActivityTypes
-        
-        // I don't recall if Swift & ObjC block types are still incompatible by default...
-        controller.completionWithItemsHandler = { type, completed, returnedItems, error in
-            self.callback?(type, completed, returnedItems, error)
-        }
-        
+        controller.completionWithItemsHandler = callback
         return controller
     }
     
